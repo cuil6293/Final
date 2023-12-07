@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Prompt:ital,wght@0,800;1,700&display=swap');
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Poppins";
+	font-size: 20px;
+	background-color: #7ee2ed;
+	background-image: url("RedandWhite2.png");
+	background-size: 30%;
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+
+#heading{
+	font-family: "Prompt";
+	font-weight: bolder;
+}
+
+.navigation{
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 1000;
+}
+
+.navigation a {
+	display: block;
+	color: #ff3b3b;
+	text-align: center;
+	padding: 14px 14px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: #000;
+	transform: scale(1.2);
+}
+
+.navigation a:not(first-child){
+	margin-left: 5%;
+}
+
+.navigation img {
+	width: 30px;
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.navigation h1 {
+	margin: 0;
+	padding: 14px 16px;
+	color: #ff3b3b;
+}
+
+.promotion{
+	background-color: #000;
+	color: #ff0000;
+	font-family: "Prompt";
+	font-weight: bold;
+	font-size: 20px;
+	background-image: url("15.webp");
+	background-size: 5%;
+	background-position: center;
+	text-align: center;
+	line-height: 1px;
+	background-repeat: repeat-x;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 80px;
+
+}
+
+#banner{
+	width: 100vw;
+	height: 70vh;
+	object-fit: cover;
+}
+
+
+#new {
+	font-size: 20px;
+	margin-top: 40px;
+	margin-left: 90px;
+	color: #fff;
+}
+
+.gallery {
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    text-align: center;
+    width: 270px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: .2s;
+}
+
+.item img:hover{
+	transform: scale(1.1);
+	box-shadow: 5px 5px 8px #000;
+}
+.item p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.item .sides {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.item .sides p {
+    margin: 0;
+}
+
+.shopnow{
+	color: #ff3b3b;
+	background-color: #fff;
+	border-radius: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	transition: 0.2s;
+}
+
+.shopnow:hover{
+	transform: scale(1.1);
+}
+
+#Shelf{
+	width: 100vw;
+	height: 12vw;
+	margin-bottom: 80px;
+	margin-top: 0px;
+}
+
+#Shelf2{
+	width: 100vw;
+	height: 12vw;
+	margin-top: 0px;
+}
+
+.company {
+	margin-top: 100px;
+	
+}
