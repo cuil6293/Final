@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Random Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Person</title>
 </head>
 <body>
 	<div class="navigation">
@@ -17,6 +18,32 @@
 	<div class="promotion">
 		<p>PROMO CODE: SEE</p>
 	</div>
+	<div id="back">
+		<a href="People.html"><p>< Go back</p></a>
+	</div>
+	<div id="details-container">
+		<div id="image-container">
+			<img id="product" src="">
+		</div>
+		<div id="text-container">
+	        <h1 id="name"></h1>
+	        <div id="rating">
+	        	<img id= "stars" src="5stars.png">
+	        	<p id = "reviews">3 reviews</p>
+	        </div>
+	        <h2 id="price"></h2>
+	        <p id="occupation"></p>
+	        <p id="relationships"></p>
+	        <p id="address"></p>
+	        <p id="phone"></p>
+	        <p id="fact"></p>
+	        <p id="add" onclick="addToCart()">Add to cart</p>
+	    </div>
+    </div>
+
+
+	<script src="script.js"></script>
+	
 
 </body>
 </html>

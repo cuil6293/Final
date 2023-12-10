@@ -7,7 +7,7 @@ body{
 	font-size: 20px;
 	background-color: #7ee2ed;
 	background-image: url("RedandWhite2.png");
-	background-size: 30%;
+	background-size: 40%;
 	background-position: bottom;
 	background-repeat: repeat-x;
 }
@@ -20,28 +20,28 @@ body{
 .navigation{
 	display: flex;
 	align-items: center;
+	flex-direction: row;
 	background-color: #fff;
 	position: fixed;
 	top: 0;
 	width: 100vw;
+	height: 80px;
 	z-index: 1000;
 }
 
 .navigation a {
-	display: block;
 	color: #ff3b3b;
 	text-align: center;
-	padding: 14px 14px;
+	padding: 24px 20px;
 	text-decoration: none;
+	transition: 0.5s;
+	margin-left: 5%;
 }
 
 .navigation a:hover {
 	color: #000;
-	transform: scale(1.2);
-}
-
-.navigation a:not(first-child){
-	margin-left: 5%;
+	transform: scale(1.1);
+	cursor: pointer;
 }
 
 .navigation img {
@@ -84,18 +84,33 @@ body{
 
 
 #new {
-	font-size: 20px;
+	font-size: 25px;
+	text-align: center;
 	margin-top: 40px;
-	margin-left: 90px;
 	color: #fff;
+}
+
+#new2{
+	font-size: 25px;
+	text-align: center;
+	margin-top: 0px;
+	color: #fff;
+}
+
+hr.rounded{
+	border-top: 5px solid #fff;
+	border-radius: 5px;
+	margin: 0px 8vw;
+	margin-bottom: 2vw;
 }
 
 .gallery {
     display: flex;
-    margin-left: 90px;
-    margin-right: 90px;
-    justify-content: space-between;
+    gap: 5vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
     align-items: center;
+    justify-content: center;
 }
 
 .item {
@@ -111,8 +126,9 @@ body{
 }
 
 .item img:hover{
-	transform: scale(1.1);
+	transform: scale(1.03);
 	box-shadow: 5px 5px 8px #000;
+	cursor: pointer;
 }
 .item p {
     margin: 5px 0;
@@ -141,6 +157,7 @@ body{
 
 .shopnow:hover{
 	transform: scale(1.1);
+	cursor: pointer;
 }
 
 #Shelf{
@@ -157,6 +174,184 @@ body{
 }
 
 .company {
-	margin-top: 100px;
-	
+	margin-top: 110px;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-bottom: 230px;
 }
+
+.Company-begin{
+	padding: 25px 25px;
+	border-radius: 5px;
+	border: double 5px #fff;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.Company-continue{
+	padding: 25px 25px;
+	border-radius: 5px;
+	border: double 5px #fff;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+#About-1{
+	width: 30vw;
+	border-radius: 5px;
+	object-fit: contain;
+}
+
+#About-2{
+	width: 50vw;
+	border-radius: 5px;
+	object-fit: contain;
+}
+
+#About-heading{
+	text-align: center;
+	color: #fff;
+}
+
+
+#details-container{
+	display: flex;
+	gap: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 300px;
+}
+
+#image-container{
+
+}
+
+#product {
+	border-radius: 8px;
+	width: 37vw;
+}
+
+#text-container{
+	margin-right: 50px;
+}
+
+#add{
+	font-size: 25px;
+	text-align: center;
+	transition: .2s;
+	background-color: #ff3b3b;
+	color: #fff;
+	border-radius: 8px;
+	margin: 50px 100px;
+	padding: 5px 10px;
+}
+
+#add:hover{
+	background-color: #fff;
+	color: #ff3b3b;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#rating{
+	display: flex;
+	height: 30px;
+	gap: 5px;
+	flex-direction: row;
+	align-items: center;
+	font-size: 18px;
+}
+
+#stars{
+	width: 150px;
+}
+
+
+#cart{
+	margin-right: 15px;
+}
+
+#back{
+	margin: 50px 100px;
+	transition: .3s;
+	text-decoration: none;
+}
+
+#back a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#back:hover{
+	color: #ff3b3b;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+
+#special-room{
+	background-color: #000;
+	background-image: none;
+	color: #ff3b3b;
+	text-align: center;
+	font-size: 70px;
+	font-family: 'Times New Roman';
+}
+
+#special-room h1{
+	margin: 25px;
+	margin-bottom: 15px;
+}
+
+#name{
+	color: #fff;
+}
+
+#price{
+	color: #fff;
+}
+
+
+#video-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    transform: scaleX(-1);
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+}
+
+#overlay button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

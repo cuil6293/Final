@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Browse</title>
 </head>
@@ -21,7 +22,7 @@
 
 	 <h2 id="new">Trending</h2>
 
-	<div class="gallery">
+	<div class="gallery" data-aos="fade-left">
         <div class="item" onclick="showDetails('People4')">
             <img src="People4.png">
             <div class="sides">
@@ -30,10 +31,10 @@
 	        </div>
             <p class="shopnow">Shop Now</p>
         </div>
-        <div class="item" onclick="showDetails('People5')">
-            <img src="People5.png">
+        <div class="item" onclick="showDetails('People10')">
+            <img src="People10.png">
             <div class="sides">
-	            <p>Wilson Torres, 46</p>
+	            <p>Kyle Robertson</p>
 	            <p>$10.00</p>
 	        </div>
             <p class="shopnow">Shop Now</p>
@@ -49,9 +50,9 @@
     </div>
     <img id = "Shelf2" src="shelf.png">
 
-	<h2 id="new">New</h2>
+	<h2 id="new2">New</h2>
 
-	<div class="gallery">
+	<div class="gallery" data-aos="fade-right">
         <div class="item" onclick="showDetails('People1')">
             <img src="People1.png">
             <div class="sides">
@@ -79,9 +80,9 @@
     </div>
     <img id = "Shelf2" src="shelf.png">
 
-    <h2 id="new">Old</h2>
+    <h2 id="new2">Best Sellers</h2>
 
-	<div class="gallery">
+	<div class="gallery" data-aos="fade-left">
         <div class="item" onclick="showDetails('People6')">
             <img src="People6.png">
             <div class="sides">
@@ -109,9 +110,9 @@
     </div>
     <img id = "Shelf2" src="shelf.png">
 
-    <h2 id="new">On Sale</h2>
+    <h2 id="new2">On Sale</h2>
 
-	<div class="gallery">
+	<div class="gallery" data-aos="fade-right">
         <div class="item" onclick="showDetails('People8')">
             <img src="People8.png">
             <div class="sides">
@@ -120,10 +121,10 @@
 	        </div>
             <p class="shopnow">Shop Now</p>
         </div>
-        <div class="item" onclick="showDetails('People10')">
-            <img src="People10.png">
+        <div class="item" onclick="showDetails('People5')">
+            <img src="People5.png">
             <div class="sides">
-	            <p>Kyle Robertson, 67</p>
+	            <p>Wilson Torres, 46</p>
 	            <p>$4.75</p>
 	        </div>
             <p class="shopnow">Shop Now</p>
@@ -143,7 +144,7 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 
 </body>
